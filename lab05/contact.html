@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact</title>
+    </head>
+    <body>
+        <h1>Contact</h1>
+        <p>Sarah Dolgin</p>
+        <p>404 University Ave., Syracuse, NY, 13210</p>
+        <a href="mailto:sedolgin@syr.edu">Sarah Dolgin Email</a><br>
+        <a href="https://www.linkedin.com/in/sarah-dolgin"><img src="../images/logo-sized.png" alt="Linkedin logo">My LinkedIn Profile</a><br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.7655616117054!2d-76.13689228434265!3d43.046363899475324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3a721b158ab%3A0x3d68244594f4f5de!2s404%20University%20Ave%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1675350861890!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <h3>Submit a tip!</h3>
+        <form action= "https://formspree.io/f/mqkopqgl" method= "POST" >
+            <label for="fullname">Full Name:</label>
+            <input type= "text" id="fullname" name="fullname">
+            <br>
+            <label for="tip">Tip:</label>
+            <textarea id="tip" name="tip" rows="4" cols="50"></textarea><br>
+            <!--id uniquely identifies tag on HTML page-->
+            <input type="radio" id="anonymous1" name="anonymous" value="anonymous">
+            <label for="anonymous1">anonymous</label>
+            <input type="radio" id="anonymous2" name="anonymous" value="anonymous">
+            <label for="anonymous2">named</label><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
