@@ -1,0 +1,18 @@
+        h1 {color: #3f007d;} 
+        h2 {color: #3f007d;} 
+        h3 {color: #3f007d;} 
+        
+        a {color:  #c51b8a;}
+        a:hover {color: #807dba;}
+        
+        body {background-color: #dadaeb;}
+        p {color: #54278f;}
+        ul {color: #54278f;}
+
+        nav {background-color: #bfd3e6;
+             padding: 10px;
+             margin-bottom: 30px;
+        }
+        nav a {color: #dd3497;}
+        nav a:hover {background-color: #807dba;}
+
