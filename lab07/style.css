@@ -5,9 +5,9 @@
         a {color:  #c51b8a;}
         a:hover {color: #807dba;}
         
-        body {background-color: #dadaeb;}
-        p {color: #54278f;}
-        ul {color: #54278f;}
+        body {background-color: #dadaeb;
+              color: #54278f;}
+       
 
         nav {background-color: #bfd3e6;
              padding: 10px;
