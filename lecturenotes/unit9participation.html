@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nav Flexbox Exercise</title>
+    <style>
+    .nav {
+            background-color: hotpink;
+            display: flex;
+            justify-content: space-between;
+        }
+    .childflex {
+            display: flex;
+        }
+    img {width: 40px}
+    .childflex div {margin: 5px;}
+    
+    </style>
+</head>
+<body>
+        <nav class="nav">
+                <div class="childflex">
+                    <div><a href="https://www.sarahdolgin.com">Portfolio</a></div>
+                    <div><a href="https://www.linkedin.com/in/sarah-dolgin/">LinkedIn</a></div>
+                    <div><a href="https://centralcurrent.org/author/sarahdolgin/">Recent Articles</a></div>
+                </div>
+                <div class="childflex">
+                    <div><img src="../images/bunny.jpg"></div>
+                    <div><img src="../images/newspaper.png"></div>
+                </div>
+            </nav>
+</body>
+</html>
