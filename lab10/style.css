@@ -13,7 +13,7 @@
               color: #54278f;
               margin: 0 auto;
             }
-       .banner {max-width: 100%;}
+       .banner {width: 100%;}
 
         nav {background-color: #bfd3e6;
              padding: 10px;
@@ -63,4 +63,4 @@
             width: 75%;
         }
 
-        
+        .col3, .col4 {flex-wrap: wrap;}
