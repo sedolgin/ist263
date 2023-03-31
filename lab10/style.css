@@ -67,5 +67,8 @@
 
 
     @media only screen and (min-width: 768px) {
-        nav a {display:none;}
-    }
+        nav a {
+            display:flex;
+            flex-direction:column;}
+
+    } 
