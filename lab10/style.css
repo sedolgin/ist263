@@ -65,10 +65,16 @@
 
     .row2 {flex-wrap: wrap;}
 
-
-    @media only screen and (min-width: 768px) {
+    @media screen and (max-width: 768x) {
         nav a {
-            display:flex;
-            flex-direction:column;}
-
-    } 
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+        
+        nav a {
+          float: left;
+          padding: 15px;
+        }
+        
+    }
