@@ -64,3 +64,8 @@
         }
 
     .row2 {flex-wrap: wrap;}
+
+
+    @media only screen and (min-width: 768px) {
+        nav a {display:none;}
+    }
