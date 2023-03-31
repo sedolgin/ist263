@@ -65,23 +65,17 @@
 
     .row2 {flex-wrap: wrap;}
 
-    @media screen and (max-width: 900x) {
+    @media screen and (max-width: 768px) {
         nav a {
-          width: 100%;
-          height: auto;
-          position: relative;
+            width: 100%;
+            display: block;
+            padding: 20 px;
         }
-        
-        nav a {
-          float: left;
-          padding: 15px;
-        }
-        
-    }
-
-    @media screen and (max-width: 400px) {
-        nav a {
-          text-align: center;
-          float: none;
-        }
+        span {display: none;}
+      
       }
+
+    @media screen and (min-width: 769px) {
+        
+      
+    }
