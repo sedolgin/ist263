@@ -19,7 +19,7 @@
              padding: 10px;
              margin-bottom: 30px;
         }
-        nav a {color: #dd3497;}
+        nav a {color: #000000;}
         nav a:hover {background-color: #807dba;}
         .quote {float:right;}
         .row1, .row2 {display: flex;}
