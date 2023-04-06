@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A11y</title>
+    <style>
+        .skip {
+            background-color: #ff7700;
+            padding: 5px;
+            border: 1 px solid #000000;
+            text-decoration: none;
+            position: absolute; /*look this up in w3 schools*/
+            left: -999px; /*means you're disappearing something off the screen, this is a convention for web developers*/
+            top: 30px; /*top is going to push it down slightly*/
+        }
+        .skip:focus {
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <a href="#main" class="skip" tabindex="1">Skip to Content</a><br> <!--bookmark tags take you higher or lower on the page-->
+        <a href="http://www.syr.edu" tabindex="1">syr.edu</a><br>
+        <a href="http://ischool.syr.edu" tabindex="3">iSchool</a><br>
+        <a href="http://soe.syr.edu" tabindex="2">SOE</a>
+    </section>
+    <section>
+        <h1>About Syracuse</h1>
+        <p id="main">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis reprehenderit modi magni facilis delectus cum impedit veritatis, repellat architecto est id enim inventore quasi illo maiores fugit facere eligendi vel.</p>
+    </section>
+    
+</body>
+</html>
