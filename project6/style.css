@@ -170,6 +170,71 @@ body {
   button:hover {
     background: pink;
   }
+  :root {
+    --drop-height: 200px;										
+    --logo-size: 48px;
+    --offset: 50px;
+    --shadow-height: 8px;
+  }
 
-
+  .container {
+    position: relative;
+  }
   
+  .logo {
+    position: absolute;
+    top: var(--offset);
+    left: calc(50% - var(--logo-size) / 2);								
+  }
+  
+  .shadow {
+    position: absolute;
+    top: calc(
+      var(--offset) + 
+      var(--drop-height) + 
+      var(--logo-size) - 
+      1.5  var(--shadow-height)
+    );
+    left: calc(50% - var(--logo-size) / 2);
+  }
+
+  @keyframes bounce {
+    from { 
+      transform: translateY(0) scale(1);
+    }
+    to   { 
+      transform: translateY(var(--drop-height)) scale(1, 0.7);
+    }
+  }
+  
+  .logo {
+    animation-name: bounce; 
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes grow {
+    from {
+      transform: scale(0.2, 0.5);								
+    }
+  
+    to {
+      transform: scale(1, 0.1);   
+    }
+  }
+
+  .logo {	
+    background-image: './path/to/logo.png';							
+    background-size: cover;
+    border-radius:50% 50% 50% 50%;
+  }
+
+  .shadow {	
+  background: radial-gradient(50% 50%, rgba(150,150,150,1), rgba(150,150,150,0.05));
+}
+ 
+.logo, .container, .shadow {
+    width: 100%;
+}
