@@ -246,14 +246,15 @@ body {
 
 
 .skip {
-  background-color: #ffffff;
-  padding: 5px;
-  border: 1 px solid #000000;
-  text-decoration: none;
-  position: absolute; /*look this up in w3 schools*/
-  left: -999px; /*means you're disappearing something off the screen, this is a convention for web developers*/
-  top: 30px; /*top is going to push it down slightly*/
+  position: absolute;
+  left: -10000px; 
+  top: auto; 
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 .skip:focus {
-  left: 10px;
+  position: static;
+  width: auto;
+  height: auto;
 }
